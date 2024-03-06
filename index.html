@@ -3,41 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Ainura Abdullayeva - Welcome to My Webpage!</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Main Navigation --> 
+<!-- Main Navigation  -->
 <header id="main_nav">
-  <div class="main_nav">
-    <nav>
-      <div><img src="images/logo_light.png" width:100 width:43/></div>
-      <ul>
-        <li><a class="smoothscroll" href="#header">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About</a></li>
-        <li><a class="smoothscroll" href="#skills">Skills</a></li>
-        <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-        <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="flex_container">
+
+      <div><img src="images/logo_light.png" width="100" height="auto"/></div>
+    <div class="flex_nav">
+        <a class="navlink" href="#header">Home</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#skills">Skills</a>
+        <a class="navlink" href="#gallery">Gallery</a>
+        <a class="navlink" href="#faqs">FAQs</a>
+        <a class="navlink" href="#contact">Contact</a>
+    </div>
+   
   </div>
 </header>
 
 <!-- Main Header --> 
   <section id="header" class="header">
-<div><img src="images/header.png" width:100% height:620/></div>
+ <img src="images/header.png" width="100%"/>
   </section>
   
 <!-- About Section --> 
 <section id="about">
   <div class="container">
-    <div class="row">
-      <h2 class="main_title">About</h2>
-      <div><img src="images/my_headshot.png"/></div>
-      <p>Hi there! I am Ainura Abdul, a graphic design and UI/UX student at San Diego State University. I was born and raised in Kazakhstan and moved to the United States over 5 years ago to pursue my creative dreams. 
+   <h2 class="main_title">About</h2> 
+     <div class="row">
+      <div><img src="images/my_headshot.png" width="400" height="400"/></div>
+     <div>
+       <p>Hi there! I am Ainura Abdul, a graphic design and UI/UX student at San Diego State University. I was born and raised in Kazakhstan and moved to the United States over 5 years ago to pursue my creative dreams. 
         I specialize in all types of graphic design, particularly having most interest in branding, app and website design.</p>
         <p>Scroll down to see my skills and works!</p>
+        </div>
     </div>
   </div>
 </section>
@@ -45,50 +47,62 @@
 <!-- Skills Section -->  
 <section id="skills">
   <div class="container">
+    
     <h2 class="main_title">Skills</h2>
     <div>
     <h3 class="skillsub">Adobe Graphic and Visual Design Software</h3>
+    <div class="row">
     <div>
     <div><img width="138" height="138" src="images/illustrator.svg" /></div>
-    <div><span class="skill">Illustrator</span></div>
+    <div><span class="skill_text">Illustrator</span></div>
     </div>
     <div>
     <div><img width="138" height="138" src="images/photoshop.svg" /></div>
-    <div><span class="skill">Photoshop</span></div>
+    <div><span class="skill_text">Photoshop</span></div>
     </div>
     <div>
     <div><img width="138" height="138" src="images/indesign.svg" /></div>
-    <div><span class="skill">InDesign</span></div>
+    <div><span class="skill_text">InDesign</span></div>
    </div>
     </div>
-    <div> 
-    <h3 class="skillsub">App and Website building and Prototyping Software</h3>
+    </div>
+   
     <div>
+    <h3 class="skillsub">App and Website building and Prototyping Software</h3>
+    
+    <div class="row"> 
+      <div>
     <div><img width="138" height="138" src="images/webflow.svg" /></div>
-    <div><span class="skill">webflow</span></div>
+    <div><span class="skill_text">Webflow</span></div>
     </div>
     <div>
     <div><img width="138" height="138" src="images/figma.svg"/></div>
-    <div><span class="skill">Figma</span></div>
+    <div><span class="skill_text">Figma</span></div>
     </div>
     <div>
     <div><img width="138" height="138" src="images/html.svg" /></div>
-    <div><span class="skill">HTML</span></div>
+    <div><span class="skill_text">HTML</span></div>
     </div>
     </div>
+    </div>
+
+    <div>
     <h3 class="skillsub">Practical skills</h3>
+    <div class="row">
     <div>
     <div><img width="138" height="138" src="images/collab.svg" /></div>
-    <div><span class="skill">Collaboration</span></div>
+    <div><span class="skill_text">Collaboration</span></div>
     </div>
     <div>
     <div><img width="138" height="138" src="images/research.svg"/></div>
-    <div><span class="skill">Research</span></div>
+    <div><span class="skill_text">Research</span></div>
     </div>
     <div>
     <div><img width="138" height="138" src="images/time.svg" /></div>
-    <div><span class="skill">Time Management</span></div>
+    <div><span class="skill_text">Time Management</span></div>
     </div>
+  </div>
+  </div>
   </div>
     
 
@@ -101,7 +115,7 @@
 <section id="gallery">
   <div class="container">
     <h2 class="main_title">My Work</h2>
-
+  <div class="coloumn">
     <div>
       <h3 class="work_title">MountPro Protein</h3>
       <p><span class="work_sub">branding /website design</span></p>
