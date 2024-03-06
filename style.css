@@ -30,7 +30,9 @@ p {
     font-size: 28px;
 }
 h2,footer, a.navlink {
-    font-family:"Sirenia", serif; 
+    font-family: "sirenia", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -51,7 +53,9 @@ section {
 
 
 a.navlink {
-    font-family:"Sirenia", serif;
+    font-family: "sirenia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 24px;
     text-decoration: none;
     padding: 0px;
@@ -94,6 +98,7 @@ align-items: center;
     justify-content: center;
     gap: 170px;
     padding-top: 30px;
+    width: 100%;
 
 }
 .header {
@@ -102,6 +107,24 @@ align-items: center;
     size: cover;
     margin-left: 10px;
     margin-right: 10px;
+
+}
+.headshot{
+size: cover;
+}
+
+.photo_frame{
+box-sizing: border-box;
+border-style: solid;
+position:relative;
+width:1000px;
+left: 10px;
+top: 60px;
+border: 6px solid #904B99;
+}
+
+.skill_row{
+
 }
 
 footer {
