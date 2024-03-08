@@ -22,7 +22,11 @@ h3 {
 }
 
 p {
-    font-size: 25px;
+    font-family: "Literata", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+     font-size: 25px;
     text-align: left;
 }
 
@@ -110,17 +114,22 @@ align-items: center;
 
 }
 .headshot{
-size: cover;
+position: relative;
+z-index: 1;
 }
 
 .photo_frame{
 box-sizing: border-box;
 border-style: solid;
-position:relative;
-width:1000px;
-left: 10px;
+position:absolute;
+
+width:400px;
+height: 400px;
+left: -60px;
 top: 60px;
 border: 6px solid #904B99;
+z-index: -1;
+
 }
 
 .skill_row{
