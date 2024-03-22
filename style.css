@@ -264,14 +264,18 @@ z-index: -1;
 }
 #gallery {
     align-content: center;
+    align-items: center;
+   
+    
 }
 
 .gallery_block {
 background-color: darkgray;
-width: 630px;
+width: 100%;
+max-width: 630px;
 height: 500px;
-left: 0px;
-top: 0px;
+margin-left: auto;
+margin-right: auto;
 
 background: #C58DCC;
 
@@ -281,7 +285,8 @@ background: #C58DCC;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     gap: 20px;
 }
 
