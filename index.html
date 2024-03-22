@@ -6,10 +6,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/dwp1owc.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="responsive.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <div onclick="myMenu()" class="mobile_menu" id="menubutton"></div>
 
 <!-- Main Navigation  -->
 <header id="main_nav">
@@ -28,6 +31,18 @@
   </div>
 </header>
 
+<div id="mymenu" class="mobile-menu-popout">
+
+  <div class="mobile-column">
+      <a class="navlink" href="#header">Home</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#skills">Skills</a>
+      <a class="navlink" href="#gallery">Gallery</a>
+      <a class="navlink" href="#faqs">FAQs</a>
+      <a class="navlink" href="#contact">Contact</a>
+  </div>
+  </div>
+
 <!-- Main Header --> 
   <section id="header" class="header">
  <img src="images/header1.png" width="100%"/>
@@ -39,11 +54,11 @@
     
    <h2 class="main_title">About</h2> 
     
-    <div class="row">
+    <div class="about_row">
       
-       <div class="headshot"><img src="images/my_headshot.png" width="400" height="400"/><div class="photo_frame"></div></div>
+       <div class="photo"><img class="headshot" src="images/my_headshot.png"/><div class="photo_frame"></div></div>
       
-     <div>
+     <div class="intro">
        <p>Hi there! I am Ainura Abdul, a graphic design and UI/UX student at San Diego State University. I was born and raised in Kazakhstan and moved to the United States over 5 years ago to pursue my creative dreams. 
         I specialize in all types of graphic design, particularly having most interest in branding, app and website design.</p>
         <p>Scroll down to see my skills and works!</p>
@@ -57,56 +72,58 @@
   <div class="container">
     
     <h2 class="main_title">Skills</h2>
-    <div>
+    <div class="skill_block">
     <h3 class="skillsub">Adobe Graphic and Visual Design Software</h3>
     <div class="row">
-    <div>
-    <div><img width="138" height="138" src="images/illustrator.svg" /></div>
+    <div class="skill_row">
+    <div><img class="skill_image" src="images/illustrator.svg" /></div>
     <div><span class="skill_text">Illustrator</span></div>
     </div>
-    <div>
-    <div><img width="138" height="138" src="images/photoshop.svg" /></div>
+    <div class="skill_row">
+    <div><img class="skill_image"src="images/photoshop.svg" /></div>
     <div><span class="skill_text">Photoshop</span></div>
     </div>
-    <div>
-    <div><img width="138" height="138" src="images/indesign.svg" /></div>
+    <div class="skill_row">
+    <div><img class="skill_image" src="images/indesign.svg" /></div>
     <div><span class="skill_text">InDesign</span></div>
    </div>
     </div>
     </div>
    
-    <div>
-    <h3 class="skillsub">App and Website building and Prototyping Software</h3>
+    <div class="skill_block">
+    <h3 class="skillsub">App and Website Building and Prototyping Software</h3>
     
     <div class="row"> 
       <div class="skill_row">
-    <div><img width="138" height="138" src="images/webflow.svg" /></div>
+    <div><img class="skill_image" src="images/webflow.svg" /></div>
     <div><span class="skill_text">Webflow</span></div>
     </div>
     <div class="skill_row">
-    <div><img width="138" height="138" src="images/figma.svg"/></div>
+    <div><img class="skill_image" src="images/figma.svg"/></div>
     <div><span class="skill_text">Figma</span></div>
     </div>
     <div class="skill_row">
-    <div><img width="138" height="138" src="images/html.svg" /></div>
+    <div><img class="skill_image" src="images/html.svg" /></div>
     <div><span class="skill_text">HTML</span></div>
     </div>
     </div>
     </div>
 
-    <div>
+
+    <div class="skill_block">
     <h3 class="skillsub">Practical skills</h3>
+    
     <div class="row">
-    <div>
-    <div><img width="138" height="138" src="images/collab.svg" /></div>
+    <div class="skill_row">
+    <div><img class="skill_image" src="images/collab.svg" /></div>
     <div><span class="skill_text">Collaboration</span></div>
     </div>
-    <div>
-    <div><img width="138" height="138" src="images/research.svg"/></div>
+    <div class="skill_row">
+    <div><img class="skill_image" src="images/research.svg"/></div>
     <div><span class="skill_text">Research</span></div>
     </div>
-    <div>
-    <div><img width="138" height="138" src="images/time.svg" /></div>
+    <div class="skill_row">
+    <div><img class="skill_image" src="images/time.svg" /></div>
     <div><span class="skill_text">Time Management</span></div>
     </div>
   </div>
@@ -123,73 +140,76 @@
 <section id="gallery">
   <div class="container">
     <h2 class="main_title">My Work</h2>
-  <div class="coloumn">
-    <div>
+  <div class="column">
+    <div class="gallery_block color_1">
       <h3 class="work_title">MountPro Protein</h3>
-      <p><span class="work_sub">branding /website design</span></p>
-      <div><img width="500" height="350" src="images/mountpro_logo.png" alt="MountPro Protein"/></div>
+      <span class="work_sub">Branding /Website Design</span>
+      <div><img class="img_gallery dark_shadow" src="images/mountpro_logo.png" alt="MountPro Protein"/></div>
     </div>
 
-        <h3 class="work_title">XocoNuri Chocolate</h3>
-        <p><span class="work_sub">branding/packaging design</span></p>
-        <div><img  width="500" height="350" src="images/chocolate_coconut.jpg" alt="XocoNuri Chocolate Bar"/></div>
-      </div>
+       <div class="gallery_block color_2">
+         <h3 class="work_title">XocoNuri Chocolate</h3>
+        <span class="work_sub">Branding/Packaging Design</span>
+        <div><img class="img_gallery dark_shadow"  src="images/chocolate_coconut.jpg" alt="XocoNuri Chocolate Bar"/></div>
+       </div>
 
-      <div>
+      <div class="gallery_block color_2">
         <h3 class="work_title">Famous Couples</h3>
-        <p><span class="work_sub"> book cover design</span></p>
-        <div><img width="500" height="350" src="images/famous_couples_book.jpg" alt="Famous Couples Book Cover"/></div>
+        <span class="work_sub"> Book Cover Design</span>
+        <div><img class="img_gallery dark_shadow" src="images/famous_couples_book.jpg" alt="Famous Couples Book Cover"/></div>
       </div>
 
-      <div>
+      <div class="gallery_block color_3">
         <h3 class="work_title">Rooftop Bars Guide</h3>
-        <p><span class="work_sub"> App Interface Design</h4></p>
-        <div><img width="500" height="350" src="images/rooftop.jpg" alt="Rooftop Bars App"/></div>
+        <span class="work_sub"> App Interface Design</span>
+        <div><img class="img_gallery light_shadow" src="images/rooftop.jpg" alt="Rooftop Bars App"/></div>
       </div>
 
-      <div>
+      <div class="gallery_block color_3">
         <h3 class="work_title">UI of the Week</h3>
-       <p><span class="work_sub">branding /app interface</span></p>
-        <div><img width="500" height="350" src="images/UIOTW_1.jpg" alt="UI of the Week"/></div>
+       <span class="work_sub">Branding /App Interface</span>
+        <div><img class="img_gallery light_shadow" src="images/UIOTW_1.jpg" alt="UI of the Week"/></div>
       </div>
 
-      <div>
-        <h3 class="work_title">LACUNA WINES</h3>
-        <p><span class="work_sub"></span> branding/packaging design</span></p>
-        <div><img width="500" height="350" src="images/wines.jpg" alt="LACUNA WINES"/></div>
+      <div class="gallery_block color_1">
+        <h3 class="work_title">Lacuna Wines</h3>
+        <span class="work_sub"></span> Branding/Packaging Design</span>
+        <div><img class="img_gallery dark_shadow" src="images/wines.jpg" alt="LACUNA WINES"/></div>
       </div>
 
-      <div>
+      <div class="gallery_block color_2">
         <h3 class="work_title">Coquette Fitness Club</h3>
-        <p><span class="work_sub"> branding/ landing page design</span></P>
-        <div><img width="500" height="350" src="images/gympic.jpg" alt="Coquette Fitness branding"/></div>
+        <span class="work_sub"> Branding/Landing Page Design</span>
+        <div><img class="img_gallery dark_shadow" src="images/gympic.jpg" alt="Coquette Fitness branding"/></div>
       </div>
 
-      <div>
+      <div class="gallery_block color_3">
         <h3 class="work_title">Snacks Packaging</h3>
-        <p><span class="work_sub">branding/ packaging design </span></p>
-        <div><img width="500" height="350" src="images/packaging_snack.png" alt="Snacks Packaging"/></div>
+        <span class="work_sub">Branding/Packaging Design </span>
+        <div><img class="img_gallery light_shadow" src="images/packaging_snack.png" alt="Snacks Packaging"/></div>
       </div>
 
-      
+      </div>
   </div>
 </section>
 
 <!-- Testimonials Section -->  
 <section id="faqs">
   <div class="container">
-    <h2 clas="main_title">FAQs</h2>
-     <div><h3 class="question">When will you be graduating from SDSU?</h3>
-      <p class="answer">Spring 2024</p>
+    <h2 class="faq_title">FAQs</h2>
+     <div class="faq_flex">
+      <div class="q_box"><h3 class="question">When will you be graduating from SDSU?</h3>
+      <span class="answer">Spring 2024</span>
       </div>
-      <div><h3 class="question">What do you have planned for after graduation?</h3>
-      <p class="answer">I will be applying for jobs in UI/UX or Graghic Design fields </p>
+      <div class="q_box"><h3 class="question">What do you have planned for after graduation?</h3>
+      <span class="answer">I will be applying for jobs in UI/UX or Graghic Design fields </span>
       </div>
-      <div><h3 class="question">What was your favorite class you took at SDSU?</h3>
-      <p class="answer">I would say Design for the Internet I for sure!</p>
+      <div class="q_box"><h3 class="question">What was your favorite class you took at SDSU?</h3>
+      <span class="answer">I would say Design for the Internet I for sure!</span>
       </div>
-      <div><h3 class="question">What work are you most proud producing at SDSU?</h3>
-      <p class="answer">I am mostly proud of my Website design in Figma and later in Webflow for the protein and supplement brand Mount Pro.</p>
+      <div class="q_box"><h3 class="question">What work are you most proud producing at SDSU?</h3>
+      <span class="answer">I am mostly proud of my Website design in Figma and later in Webflow for the protein and supplement brand Mount Pro.</span>
+    </div>
       </div>
   </div>
 </section>
@@ -197,20 +217,20 @@
 <!-- Contact Section -->  
 <section id="contact">
   <div class="container">
-    <h2 class="main_title"> Ready to Connect?</h2>
+    <h2 class="connect_title"> Ready to Connect?</h2>
     <form>
-      <div class="six columns">
-        <label for="exampleRecipientInput"></label>
-        <input class="u-full-width" type="text" placeholder="Full Name"/>
+      <div class="form_1">
+        <label for="name"></label>
+        <input class="form_width" type="text" placeholder="Full Name"/>
       </div>
-      <div class="six columns">
-        <label for="exampleEmailInput"></label>
-        <input class="u-full-width" type="email" placeholder="E-mail"/>
+      <div class="form_1">
+        <label for="email"></label>
+        <input class="form_width" type="email" placeholder="E-mail"/>
       </div>
     
-      <div>
-        <label for="exampleMessage"></label>
-        <textarea class="u-full-width" placeholder="Message"></textarea>
+      <div class="form_1">
+        <label for="message"></label>
+        <textarea class="width_message" placeholder="Message"></textarea>
       </div>
       <input class="button-primary" type="submit" value="SEND">
     </form>
@@ -221,9 +241,17 @@
 
 <footer>
   <div class="container">
-      <p>© 2024, Ainura Abdul</p>
+      <p class="footer1">© 2024, Ainura Abdul</p>
   </div>
 </footer>
+
+<script>
+  function myMenu() {
+    document.getElementById('mymenu').classList.toggle('open');
+    document.getElementById('menubutton').classList.toggle('close');
+
+  }
+</script>
 
 <script src="script.js"></script>
 </body>
