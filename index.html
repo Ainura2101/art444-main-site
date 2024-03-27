@@ -13,6 +13,7 @@
 <body>
 
   <div onclick="myMenu()" class="mobile_menu" id="menubutton"></div>
+  
 
 <!-- Main Navigation  -->
 <header id="main_nav">
@@ -34,12 +35,12 @@
 <div id="mymenu" class="mobile-menu-popout">
 
   <div class="mobile-column">
-      <a class="navlink" href="#header">Home</a>
-      <a class="navlink" href="#about">About</a>
-      <a class="navlink" href="#skills">Skills</a>
-      <a class="navlink" href="#gallery">Gallery</a>
-      <a class="navlink" href="#faqs">FAQs</a>
-      <a class="navlink" href="#contact">Contact</a>
+      <a onclick="closemenu()" class="navlink" href="#header">Home</a>
+      <a onclick="closemenu()" class="navlink" href="#about">About</a>
+      <a onclick="closemenu()" class="navlink" href="#skills">Skills</a>
+      <a onclick="closemenu()" class="navlink" href="#gallery">Gallery</a>
+      <a onclick="closemenu()" class="navlink" href="#faqs">FAQs</a>
+      <a onclick="closemenu()" class="navlink" href="#contact">Contact</a>
   </div>
   </div>
 
@@ -251,6 +252,14 @@
     document.getElementById('menubutton').classList.toggle('close');
 
   }
+
+  function closemenu() {
+    document.getElementById('mymenu').classList.remove('open');
+    document.getElementById('menubutton').classList.remove('close')
+  }
+  
+
+  
 </script>
 
 <script src="script.js"></script>

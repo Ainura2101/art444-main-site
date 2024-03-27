@@ -1,5 +1,9 @@
 /* CSS GOES HERE */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +12,7 @@ body {
     color: #400647;
     font-size: 100%;
     vertical-align: baseline;
+    
 }
 
 
@@ -153,7 +158,7 @@ z-index: 9998;
 }
 
 .close {
-    background-image: url(images/cancelbutton.svg);
+    background-image: url(images/close.svg);
     color: #FCE7FF;
 }
 .mobile-column{
@@ -245,7 +250,7 @@ z-index: -1;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     align-items: center;
     align-content: center;
 

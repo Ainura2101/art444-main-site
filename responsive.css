@@ -52,6 +52,8 @@ a.navlink {
 }
  h3 {
     font-size: 20px;
+    margin-top: 10px;
+    
  }
 
 .row {
@@ -112,8 +114,9 @@ form {
 
  .question {
     font-size: 18px !important;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
   
 }
 
@@ -151,6 +154,7 @@ h2 {
 
 h3 {
     font-size: 16px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -237,10 +241,11 @@ p {
  }
 
  .question {
-    font-size: 12px !important;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 0px;
+    font-size: 11px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  
 
 }
 
