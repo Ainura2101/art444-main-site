@@ -162,6 +162,7 @@ h3 {
 
 .about_row {
     flex-direction: column;
+    max-width: 250px;
     
     
   
