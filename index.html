@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="UTF-8">
   <title>Ainura Abdullayeva - Welcome to My Webpage!</title>
   <link rel="stylesheet" href="style.css">
@@ -9,17 +11,20 @@
   <link rel="stylesheet" href="responsive.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
   <div onclick="myMenu()" class="mobile_menu" id="menubutton"></div>
+  <div onclick="darkMode()" class="darkmode_button" id="moon_dark"></div>
   
 
 <!-- Main Navigation  -->
 <header id="main_nav">
   <div class="flex_container">
 
-      <div><img src="images/logo_light.png" width="100" height="auto"/></div>
+      <div class="logo"></div>
+
     <div class="flex_nav">
         <a class="navlink" href="#header">Home</a>
         <a class="navlink" href="#about">About</a>
@@ -174,7 +179,7 @@
 
       <div class="gallery_block color_1">
         <h3 class="work_title">Lacuna Wines</h3>
-        <span class="work_sub"></span> Branding/Packaging Design</span>
+        <span class="work_sub">Branding/Packaging Design</span>
         <div><img class="img_gallery dark_shadow" src="images/wines.jpg" alt="LACUNA WINES"/></div>
       </div>
 
@@ -219,18 +224,18 @@
 <section id="contact">
   <div class="container">
     <h2 class="connect_title"> Ready to Connect?</h2>
-    <form>
+    <form class="main_form">
       <div class="form_1">
-        <label for="name"></label>
+        <label for="name">Full Name</label>
         <input class="form_width" type="text" placeholder="Full Name"/>
       </div>
       <div class="form_1">
-        <label for="email"></label>
+        <label for="email">E-mail</label>
         <input class="form_width" type="email" placeholder="E-mail"/>
       </div>
     
       <div class="form_1">
-        <label for="message"></label>
+        <label for="message">Message</label>
         <textarea class="width_message" placeholder="Message"></textarea>
       </div>
       <input class="button-primary" type="submit" value="SEND">
@@ -258,6 +263,68 @@
     document.getElementById('menubutton').classList.remove('close')
   }
   
+  function darkMode() {
+    
+    document.querySelectorAll('.main_title')[0].classList.toggle('h2-dark');
+  const h2dark = document.querySelectorAll('h2')
+  for (let i = 0; i < h2dark.length; i++) {
+  h2dark[i].classList.toggle('h2-dark');
+  }
+
+   const navlinkDark=document.querySelectorAll('.navlink')
+  for (let i = 0; i < navlinkDark.length; i++) {
+    navlinkDark[i].classList.toggle('navlink-dark');
+  }
+
+  const qboxDark=document.querySelectorAll('.q_box')
+  for (let i = 0; i < qboxDark.length; i++) {
+    qboxDark[i].classList.toggle('qbox_dark');
+  }
+
+  const questionafter=document.querySelectorAll('.question')
+  for (let i = 0; i < questionafter.length; i++) {
+    questionafter[i].classList.toggle('questiondark');
+  }
+
+  const galerryDark=document.querySelectorAll('.gallery_block')
+  for (let i = 0; i < galerryDark.length; i++) {
+    galerryDark[i].classList.toggle('gallery_dark');
+  }
+
+  const inputDark=document.querySelectorAll('input')
+  for (let i = 0; i < inputDark.length; i++) {
+    inputDark[i].classList.toggle('input_dark');
+  }
+  
+  document.getElementsByTagName('body') [0].classList.toggle('body-dark-mode')
+  document.getElementsByClassName('logo')[0].classList.toggle('logo-dark')
+  document.getElementById('moon_dark').classList.toggle('light-mode')
+  document.querySelectorAll('h2')[0].classList.toggle('h2-dark')
+  document.getElementById('main_nav').classList.toggle('main_nav_dark')
+  document.getElementById('faqs').classList.toggle('faqs_dark')
+  document.getElementsByClassName('q_box')[0].classList.toggle('qbox_dark')
+  document.querySelectorAll('.q_box')[0].classList.toggle('qbox_dark')
+  document.getElementsByClassName('faq_title')[0].classList.toggle('faqtitle_dark')
+  document.getElementsByClassName('question')[0].classList.toggle('questiondark')
+  document.querySelectorAll('.question')[0].classList.toggle('questiondark')
+  document.getElementById('contact').classList.toggle('contact_dark')
+  document.getElementsByTagName('form')[0].classList.toggle('form_dark')
+  document.getElementsByTagName('label')[0].classList.toggle('label_dark')
+  document.getElementsByTagName('label')[1].classList.toggle('label_dark')
+  document.getElementsByTagName('label')[2].classList.toggle('label_dark')
+  document.getElementsByClassName('width_message')[0].classList.toggle('message_dark')
+  document.getElementsByClassName('button-primary')[0].classList.toggle('send_dark')
+  document.getElementsByTagName('footer')[0].classList.toggle('footer_dark')
+
+
+  
+
+
+
+  
+  
+   
+}
 
   
 </script>

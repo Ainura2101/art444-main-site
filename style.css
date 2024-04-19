@@ -15,7 +15,27 @@ body {
     
 }
 
+.body-dark-mode {
+color:#FCE7FF;
+background-color: #400647;
+}
 
+.darkmode_button{
+    background-image: url(images/moon.svg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 620px;
+    right: 20px;
+}
+
+.light-mode {
+    background-image: url(images/sun.svg);
+
+    
+}
 
 section {
     margin-top: 100px;
@@ -27,6 +47,11 @@ section {
 h2 {
     font-size: 90px;
     color: #400647;
+}
+
+.h2-dark {
+    color: #FCE7FF !important; 
+
 }
 
 h3 {
@@ -61,7 +86,7 @@ font-family: "Literata", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-     font-size: 20px;
+     font-size: 20px !important;
      margin-bottom: 30px;
      margin-top: 15px;
    
@@ -90,7 +115,7 @@ h2,footer, a.navlink {
 
 
 
-a.navlink {
+.navlink {
     font-family: "sirenia", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -100,22 +125,25 @@ a.navlink {
     width: auto;
     height: 32px;
     left: 800px;
-    top: 21px;
     color: #FCE7FF;
+    margin-top: 10px;
+}
+
+.navlink-dark{
+    color: #400647;
 }
 
 .flex_container {
     display: flex;
     flex-direction:row;
     justify-content:space-between ;
-    align-content: space-between;
+    align-content: center;
     align-items: center;
     margin-left:20px ;
     margin-right: 20px;
-    padding-top: auto;
-    padding-bottom: auto;
 
 }
+
 #main_nav {
     width:100%;
 height: 70px;
@@ -127,6 +155,21 @@ top: 0;
 z-index: 9998;
 }
 
+.main_nav_dark {
+    background-color: #E0B1E6 !important;
+}
+
+.logo {
+    background-image: url(images/logo_light.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+}
+.logo-dark {
+    background-image: url(images/dark-logo.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
 .mobile_menu {
     width: 36px;
     height: 36px;
@@ -267,6 +310,8 @@ z-index: -1;
     width: 138px;
     height: 138px;
 }
+
+
 #gallery {
     align-content: center;
     align-items: center;
@@ -275,16 +320,19 @@ z-index: -1;
 }
 
 .gallery_block {
-background-color: darkgray;
+background-color: #C58DCC;
 width: 100%;
 max-width: 630px;
 height: 500px;
 margin-left: auto;
 margin-right: auto;
 
-background: #C58DCC;
-
 }
+
+.gallery_dark {
+    background-color: #904B99;
+}
+
 .column {
     display: flex;
     flex-direction: row;
@@ -312,24 +360,12 @@ background: #C58DCC;
 }
 
 
-.color_1 {
-    background-color: #C58DCC;
-    color: #400647;
-    
-}
-
-.color_2 {
-    background-color: #904b99;
-    color: #FCE7FF;
-}
-
-.color_3 {
-    background-color: #400647;
-    color: #FCE7FF !important;
-}
-
 .faq_title{
     color: #E0B1E6;
+}
+
+.faqtitle_dark {
+    color: #400647 !important;
 }
 
 .answer{
@@ -346,15 +382,27 @@ background: #C58DCC;
 
 .question::after{
     content:url(images/dropdown.svg);
-    
-  
+    width: 50px;
+    margin-top: 10px;
+     
 }
+
+.questiondark::after {
+    content: url(images/dropdown-dark-01.svg) !important;
+    
+    
+}
+
 #faqs{
     background-color: #904B99;
     padding-bottom: 50px;
     
+
 }
 
+.faqs_dark {
+    background-color: #C58DCC !important;
+}
 .faq_flex{
     display: flex;
     flex-direction: column;
@@ -367,21 +415,27 @@ background: #C58DCC;
 
 .q_box{
  background-color: #E0B1E6;
- height: 100px;
+ height: 80px;
  overflow: hidden;
  margin-bottom: 50px;
  width: 100%;
+ max-width: 900px;
  margin-left: auto;
  margin-right: auto;
+}
+
+.qbox_dark{
+    background-color: #400647 !important;
 }
 
 .question {
    display: flex; 
    justify-content: space-between;
-   font-size: 32px !important;
+   font-size: 23px !important;
+   margin-top: 20px;
     margin-bottom: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
     
 }
 
@@ -394,8 +448,19 @@ background: #C58DCC;
    padding-top: 70px;
 }
 
+.contact_dark {
+    background-color: #703778 !important;
+}
+
 .connect_title {
     margin: 0px !important;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
 }
 
 form {
@@ -407,8 +472,11 @@ form {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-
    
+}
+
+.form_dark {
+    background-color: #400647 !important;
 }
 
 .form_width {
@@ -417,16 +485,39 @@ form {
     gap: 50px;
 }
 
+.form_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
+
+}
+
+label {
+    font-family: "Literata", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+     font-size: 16px; 
+     color: #400647;
+     margin-bottom: 10px;
+    
+}
+
+.label_dark {
+    color: #FCE7FF;
+}
 input[type=text] {
     background-color: #C58DCC;
     border-color: #400647;
     border-width: 2px;
     border-style: solid;
     margin-bottom: 50px;
-    margin-top: 50px;
     padding-left: 10px;
 
 }
+
+
 
 ::placeholder {
     color: #FCE7FF;
@@ -434,7 +525,7 @@ input[type=text] {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-     font-size: 16px; 
+     font-size: 14px; 
 }
 
 input[type=email] {
@@ -446,7 +537,9 @@ input[type=email] {
     padding-left: 10px;
 }
 
- 
+ .input_dark {
+    border-color: #FCE7FF !important;
+}
 
 
 .width_message {
@@ -462,7 +555,11 @@ input[type=email] {
 
 }
 
-input[type=submit] {
+.message_dark {
+    border-color: #FCE7FF !important;
+}
+
+.button-primary {
     background-color: #703778;
     color: #FCE7FF;
     width: 170px;
@@ -473,8 +570,18 @@ input[type=submit] {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-     font-size: 16px;
+     font-size: 18px !important;
     box-shadow: 5px 5px 5px rgba(64, 6, 71, 0.54);
+
+
+}
+
+.send_dark {
+    background-color: #FCE7FF;
+    color: #400647 !important;
+    box-shadow: 5px 5px 4px rgba(252, 231, 255, 0.55);
+    font-weight: 700;
+
 
 }
 
@@ -482,15 +589,18 @@ footer {
     background-color:#400647;
     color: #fff;
     align-content: center ;
-    height: 50px;
+    height: 40px;
     align-items: center;
     padding: 10 0 10 0;
 }
 
-
+.footer_dark {
+    background-color: #E0B1E6 ;
+    color: #400647;
+}
 
 .footer1 {
 text-align: center;
-font-size: 18px;
+font-size: 16px;
 margin: 0px;
 }
