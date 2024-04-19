@@ -18,6 +18,18 @@
 .logo {
     height: 30px;
 }
+
+.darkmode_button {
+    height: 70px;
+    width: 70px;
+    right: 10px;
+}
+
+.light_mode {
+    height: 70px;
+    width: 70px;
+    right: 10px;
+}
 a.navlink {
     font-size: 20px;
     margin-bottom: 20px;
