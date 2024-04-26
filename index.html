@@ -204,17 +204,17 @@
   <div class="container">
     <h2 class="faq_title">FAQs</h2>
      <div class="faq_flex">
-      <div class="q_box"><h3 class="question">When will you be graduating from SDSU?</h3>
-      <span class="answer">Spring 2024</span>
+      <div  class="q_box"><h3 class="question">When will you be graduating from SDSU?</h3>
+      <p class="answer">I will be graduating this upcoming Spring 2024. I am so excited!</p>
       </div>
       <div class="q_box"><h3 class="question">What do you have planned for after graduation?</h3>
-      <span class="answer">I will be applying for jobs in UI/UX or Graghic Design fields </span>
+      <p class="answer">I will definitely be looking for jobs in UI/UX or Graghic Design fields. Also, I'm looking into moving states. </p>
       </div>
-      <div class="q_box"><h3 class="question">What was your favorite class you took at SDSU?</h3>
-      <span class="answer">I would say Design for the Internet I for sure!</span>
+      <div  class="q_box"><h3 class="question">What was your favorite class you took at SDSU?</h3>
+      <p class="answer">I would say Design for the Internet I for sure! It was my introduction to UI/UX design and I absolutely loved it.</p>
       </div>
-      <div class="q_box"><h3 class="question">What work are you most proud producing at SDSU?</h3>
-      <span class="answer">I am mostly proud of my Website design in Figma and later in Webflow for the protein and supplement brand Mount Pro.</span>
+      <div  class="q_box"><h3 class="question">What work are you most proud producing at SDSU?</h3>
+      <p class="answer">I am mostly proud of my Website design in Figma and later in Webflow for the protein and supplement brand Mount Pro.</p>
     </div>
       </div>
   </div>
@@ -252,6 +252,19 @@
 </footer>
 
 <script>
+            
+  const faqToggle = document.querySelectorAll('.q_box')
+  for (let i = 0; i < faqToggle.length; i++) {
+  faqToggle[i].addEventListener("click", questionAfter)}
+
+  
+  function questionAfter() {
+  this.classList.toggle('faq-open')
+
+
+ }
+  
+
   function myMenu() {
     document.getElementById('mymenu').classList.toggle('open');
     document.getElementById('menubutton').classList.toggle('close');
@@ -264,7 +277,7 @@
   }
   
   function darkMode() {
-    
+
     document.querySelectorAll('.main_title')[0].classList.toggle('h2-dark');
   const h2dark = document.querySelectorAll('h2')
   for (let i = 0; i < h2dark.length; i++) {
