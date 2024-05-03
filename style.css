@@ -237,9 +237,154 @@ z-index: 9998;
     size: cover;
     margin-left: 10px;
     margin-right: 10px;
+}
 
+.grid {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 700px;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sq_row1 {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+    
+}
+
+.sq_row2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+    height: 100%;
+}
+.sq_row3 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+    height: 100%;
+}
+
+.square {
+    width: 100%;
+    max-width: 250px;
+background-color: #C58DCC;
+font-family: "sirenia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 42px;
+    text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
+
+.c1 {
+    background-color:#904B99;
+    
+}
+
+.c2 {
+    background-color: #C58DCC;
+}
+
+.c3 {
+    background-color: #E0B1E6;
+}
+
+.c4 {
+    background-color: #703778;
+    color: #FCE7FF;
+}
+
+.header_row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    width: 100%;  
+}
+
+.square11 {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    background: #C58DCC;
+    
+    }
+
+
+
+    @keyframes enlarge {
+    
+        0% {transform: scale(1); z-index: 1;}
+        50% {transform: scale(1.2); z-index: 999;}
+        100% {transform: scale(1); z-index: 1;}
+    }
+
+    .Hi {
+        animation-name: enlarge;
+        animation-duration: 1s;
+    }
+
+    .My {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 0.7s; 
+    }
+
+    .Name {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 1.5s;  
+    }
+
+    .Is {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 2s; 
+    }
+
+    .Ainura {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 2.5s; 
+    }
+
+    .Welcome {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 3s; 
+    }
+
+    .To {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 3.5s; 
+    }
+
+    .My2 {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 4s; 
+    }
+
+    .Page {
+        animation-name: enlarge;
+        animation-duration: 1s;
+        animation-delay: 4.5s; 
+    }
+
 .about_row{
  display: flex;
 flex-direction: row;
@@ -352,11 +497,8 @@ margin-right: auto;
 .img_gallery{
     width: 500px;
     height: 350px;
-}
-.light_shadow {
     margin-top: 20px;
-    filter: drop-shadow(5px 5px 4px rgba(197, 141, 204, 0.5));
-
+    filter: drop-shadow(5px 5px 4px rgba(87, 34, 94, 0.5));
 }
 
 
@@ -590,13 +732,21 @@ input[type=email] {
 
 }
 
+.button-primary:hover {
+    background-color: #FCE7FF;
+    color: #400647;
+    transition: all 300ms;
+}
+
 .send_dark {
     background-color: #FCE7FF;
     color: #400647 !important;
     box-shadow: 5px 5px 4px rgba(252, 231, 255, 0.55);
     font-weight: 700;
+}
 
-
+.send_dark:hover {
+    background-color: #C58DCC;
 }
 
 footer {
