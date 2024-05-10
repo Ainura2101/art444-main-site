@@ -158,11 +158,12 @@ form {
   
 }
 
- .question::after{
-    content:url(images/dropdown_ipad.svg);
 
 
+ .faq-open {
+    height: auto;
  }
+
 
  footer {
     height: 30px;
@@ -282,8 +283,10 @@ p {
  .q_box {
     width: 100%;
     max-width: 390px;
-    height: 40px;
-    margin-bottom: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+
+
    
  }
 
@@ -292,18 +295,31 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 10px;
+  padding-top: 5px;
   
 
 }
 
+.answer {
+    font-size: 11px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    
+}
 .faq_flex {
     margin:0px;
 }
-
-.question::after{
-    display: none;
+.faq-open {
+    height: auto;
 }
 
+.form_1 {
+margin-bottom: 0px;
+}
+label {
+    font-size: 14px;
+}
 ::placeholder {
     font-size: 12px;
 }

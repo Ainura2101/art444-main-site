@@ -196,6 +196,9 @@ z-index: 9998;
     display: none;
 }
 
+.mobile-menu-popout-dark {
+    background-color: #E0B1E6;
+}
 .open{
     right: 0px;
 }
